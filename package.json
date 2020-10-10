@@ -39,19 +39,5 @@
     "url": "https://github.com/jaid/open-repo-cli"
   },
   "homepage": "https://github.com/Jaid/open-repo-cli",
-  "keywords": [
-    "boilerplate",
-    "cli",
-    "date",
-    "moment",
-    "node",
-    "node-js",
-    "nodejs",
-    "now",
-    "print",
-    "tool",
-    "util",
-    "utility",
-    "year"
-  ]
+  "keywords": []
 }
