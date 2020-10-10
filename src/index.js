@@ -2,7 +2,7 @@ import yargs from "yargs"
 
 import getGithubUser from "lib/getGithubUser"
 
-import handleCommand from "src/commands"
+import handleDefaultCommand from "src/commands"
 import handleNpmCommand from "src/commands/npm"
 
 /**
@@ -54,7 +54,7 @@ async function main() {
   yargs
     .scriptName(process.env.REPLACE_PKG_NAME)
     .version(process.env.REPLACE_PKG_VERSION)
-    .command("* [target]", process.env.REPLACE_PKG_DESCRIPTION, commandBuilder, handleCommand)
+    .command("* [target]", process.env.REPLACE_PKG_DESCRIPTION, commandBuilder, handleDefaultCommand)
     .command("npm <packageName>", process.env.REPLACE_PKG_DESCRIPTION, commandBuilder, handleNpmCommand)
     .parse()
 }
