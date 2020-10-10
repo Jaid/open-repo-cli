@@ -45,6 +45,7 @@ cd /c/Users/Jaid/Projects/readable-ms
 open-repo-cli
 # https://github.com/Jaid/readable-ms
 ```
+
 ### Open a repository you own
 
 This reads your `.gitconfig` (`user.username` or `user.name` property) to determine your GitHub username. Can be overwritten with env variable `githubUser` or option `--github-user`.
