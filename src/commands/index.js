@@ -41,8 +41,8 @@ async function getUrl(argv) {
   }
   const targetSegments = argv.target.split("/")
   if (targetSegments.length === 1) {
-    console.log("GitHub user not specified, so target must contain a slash")
     if (!argv.githubUser) {
+      console.log("GitHub user not specified, so target must contain a slash")
       return
     }
     return buildUrl(urlBase, {
