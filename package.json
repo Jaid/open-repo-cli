@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
+    "build-url": "^2.0.0",
+    "get-pkg-repo": "^4.1.1",
+    "gitconfig": "^2.0.8",
+    "open": "^7.3.0",
+    "pacote": "^11.1.11",
+    "read-pkg-up": "^7.0.1",
     "yargs": "^16.0.3"
   },
   "devDependencies": {
