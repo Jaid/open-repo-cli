@@ -34,10 +34,7 @@ npm install --global @jaid/open-repo-cli@^0.1.0
 
 
 
-
-
-
-## Usage
+## Example
 
 ### Open the repository for the current project
 ```bash
@@ -78,6 +75,10 @@ open-repo-cli npm @babel/core
 open-repo-cli webpack/tapable/package.json
 # https://github.com/webpack/tapable/blob/master/package.json
 ```
+
+
+
+
 
 
 
