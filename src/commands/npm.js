@@ -14,7 +14,7 @@ import pacote from "pacote"
  */
 async function getUrl(argv) {
   let packageName = argv.packageName
-  if (packageName.startsWith("@")) {
+  if (packageName.startsWith("@") && !packageName.includes("/")) {
     if (!argv.npmUser) {
       console.log("--npm-user not given, can't autocomplete package name")
       return
