@@ -15,11 +15,14 @@ import handleNpmCommand from "src/commands/npm"
  */
 
 async function main() {
-  const githubUser = process.env.githubUser
-  // if (!githubUser) {
-  //   githubUser = await getGithubUser()
-  // }
-  console.log(githubUser)
+  let githubUser = process.env.githubUser
+  if (!githubUser) {
+    try {
+      githubUser = await getGithubUser()
+    } catch (error) {
+      console.log("Couldn't determine your GitHub username")
+    }
+  }
   /**
    * @type {import("yargs").CommandBuilder}
    */
@@ -60,6 +63,6 @@ async function main() {
     .parse()
 }
 
-console.log(1)
-
-main()
+main().catch(error => {
+  console.error(error)
+})
