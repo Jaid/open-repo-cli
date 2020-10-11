@@ -19,6 +19,7 @@ async function main() {
   if (!githubUser) {
     githubUser = await getGithubUser()
   }
+  console.log(githubUser)
   /**
    * @type {import("yargs").CommandBuilder}
    */
