@@ -70,7 +70,9 @@ async function getUrl(argv) {
  * @return {Promise<void>}
  */
 export default async argv => {
+  console.log(2)
   const url = await getUrl(argv)
+  console.log(3)
   if (!url) {
     console.log("Couldn't find a suitable URL")
     process.exit(1)

@@ -59,4 +59,6 @@ async function main() {
     .parse()
 }
 
+console.log(1)
+
 main()
