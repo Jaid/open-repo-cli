@@ -56,7 +56,7 @@ async function main() {
     .version(process.env.REPLACE_PKG_VERSION)
     .command("* [target]", process.env.REPLACE_PKG_DESCRIPTION, commandBuilder, handleDefaultCommand)
     .command("npm <packageName>", "Open a GitHub page for given npm package.", commandBuilder, handleNpmCommand)
-    .parse()
+    .argv
 }
 
 console.log(1)
