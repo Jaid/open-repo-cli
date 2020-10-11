@@ -15,10 +15,10 @@ import handleNpmCommand from "src/commands/npm"
  */
 
 async function main() {
-  let githubUser = process.env.githubUser
-  if (!githubUser) {
-    githubUser = await getGithubUser()
-  }
+  const githubUser = process.env.githubUser
+  // if (!githubUser) {
+  //   githubUser = await getGithubUser()
+  // }
   console.log(githubUser)
   /**
    * @type {import("yargs").CommandBuilder}
