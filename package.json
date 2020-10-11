@@ -1,6 +1,6 @@
 {
   "webpackConfigJaid": "cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
     "build-url": "^6.0.1",
