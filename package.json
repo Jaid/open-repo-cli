@@ -45,5 +45,6 @@
     "url": "https://github.com/jaid/open-repo-cli"
   },
   "homepage": "https://github.com/Jaid/open-repo-cli",
-  "keywords": []
+  "keywords": [],
+  "type": "module"
 }
